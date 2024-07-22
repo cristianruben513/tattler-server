@@ -2,7 +2,7 @@
 
 ### Technologies
 
-- MongoDD
+- MongoDB
 - NodeJS
 
 ### Usage
