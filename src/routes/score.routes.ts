@@ -3,7 +3,7 @@ import { getScore, createScore } from "../controllers/score.controller";
 
 const router = Router()
 
-router.get('/score/:restaurantId', getScore)
-router.post('/score/:restaurantId', createScore)
+router.get('/scores/:restaurantId', getScore)
+router.post('/scores/:restaurantId', createScore)
 
 export default router

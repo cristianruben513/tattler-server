@@ -15,9 +15,18 @@ const restaurantSchema = new Schema({
   address: addressSchema,
   scores: [{ type: Schema.Types.ObjectId, ref: 'Score' }],
   comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
-  photo: String,
-  category: String,
-  name: String
+  photo: {
+    type: String,
+    required: true
+  },
+  category: {
+    type: String,
+    required: true
+  },
+  name: {
+    type: String,
+    required: true
+  }
 }, {
   timestamps: true
 });

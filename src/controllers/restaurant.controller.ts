@@ -16,10 +16,10 @@ export const createRestaurant = async (req: Request, res: Response) => {
     const { photo, name, category, address } = req.body;
 
     const newRestaurant = new Restaurant({
-      photo,
-      name,
-      category,
-      address
+      photo: photo,
+      name: name,
+      category: category,
+      address: address
     });
     const savedRestaurant = await newRestaurant.save();
 

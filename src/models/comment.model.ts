@@ -6,6 +6,11 @@ const commentSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+  restaurant: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Restaurant',
+    required: true
+  },
 }, {
   timestamps: true
 })
